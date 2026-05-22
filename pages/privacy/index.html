@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanMind - Dashboard</title>
+
+    <link rel="stylesheet" href="../../shared/css/variables.css">
+    <link rel="stylesheet" href="../../shared/css/standard.css">
+    <link rel="stylesheet" href="../../shared/css/fonts.css">
+    <link rel="stylesheet" href="../../shared/css/assets.css">
+    <link rel="stylesheet" href="../../shared/css/header_footer.css">
+
+    <script src="../../shared/js/ui_helper.js"></script>
+    <script src="../../shared/js/api.js"></script>
+    <script src="../../shared/js/header.js"></script>
+
+    <script>
+        function checkNav() {
+            if (getAuthUserId() == null) document.querySelector("nav").remove();
+        };
+    </script>
+</head>
+
+<body onload="setHeader();checkNav()">
+    <header onclick="redirectToDashboard()" class="main_header w_full">
+        <img src="../../assets/icons/logo_icon.svg" alt="" srcset="">
+        <div id="head_content_right" class="d_flex_cc_gm head_content_right"></div>
+    </header>
+    <main class="w_full d_flex_ss_gl font_white_color">
+
+        <nav class="font_sec_color w_full">
+            <a class="link_secondary" href="../dashboard/">Dashboard</a>
+            /
+            <a class="link_secondary" href="./index.html">Privacy Policy</a>
+        </nav>
+
+        <h1 class="font_prime_color">Privacy Policy</h1>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Introduction</h2>
+            <p>
+                This privacy policy explains how your personal data is collected, used, and protected when
+                you use this application.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Data Collection</h2>
+            <p>When you register for an account, the following data is collected and stored in our database:</p>
+            <ul>
+                <li>Your name</li>
+                <li>Your email address</li>
+                <li>Your password (stored in encrypted form)</li>
+            </ul>
+            <p>This data is required to create and manage your user account.</p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Use of Data</h2>
+            <p>Your personal data will only be used to:</p>
+            <ul>
+                <li>Create and manage your user account</li>
+                <li>Enable login and authentication</li>
+                <li>Assign tasks and collaborate within the application</li>
+            </ul>
+            <p>Your data will not be shared with third parties or used for marketing purposes.</p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Data Storage</h2>
+            <p>
+                Your data is stored in a database operated by the application owner.
+                This is a demonstration project — data may be deleted at any time without prior notice.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Your Rights</h2>
+            <p>Under GDPR, you have the following rights:</p>
+            <ul>
+                <li>Right to access your personal data</li>
+                <li>Right to rectification of inaccurate data</li>
+                <li>Right to erasure (right to be forgotten)</li>
+                <li>Right to restrict processing</li>
+                <li>Right to data portability</li>
+                <li>Right to object to processing</li>
+            </ul>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Contact</h2>
+            <p>For any questions or requests regarding your personal data, please contact:</p>
+            <p>Email: <a class="link_secondary" href="mailto:contact@philippbiebert.de">contact@philippbiebert.de</a>
+            </p>
+        </section>
+
+        <p class="font_sec_color">Date: 22. May 2026</p>
+    </main>
+    <footer class="main_footer  w_full">
+        <nav class="d_flex_cs_gl">
+            <a href="../imprint/index.html" class="link">Imprint</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

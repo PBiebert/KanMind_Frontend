@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanMind - Dashboard</title>
+
+    <link rel="stylesheet" href="../../shared/css/variables.css">
+    <link rel="stylesheet" href="../../shared/css/standard.css">
+    <link rel="stylesheet" href="../../shared/css/fonts.css">
+    <link rel="stylesheet" href="../../shared/css/assets.css">
+    <link rel="stylesheet" href="../../shared/css/header_footer.css">
+
+    <script src="../../shared/js/ui_helper.js"></script>
+    <script src="../../shared/js/api.js"></script>
+    <script src="../../shared/js/header.js"></script>
+
+    <script>
+        function checkNav() {
+            if (getAuthUserId() == null) document.querySelector("nav").remove();
+        };
+    </script>
+</head>
+
+<body onload="setHeader(); checkNav()">
+    <header onclick="redirectToDashboard()" class="main_header w_full">
+        <img src="../../assets/icons/logo_icon.svg" alt="" srcset="">
+        <div id="head_content_right" class="d_flex_cc_gm head_content_right"></div>
+    </header>
+    <main class="w_full d_flex_ss_gl font_white_color">
+
+        <nav class="font_sec_color w_full">
+            <a class="link_secondary" href="../dashboard/">Dashboard</a>
+            /
+            <a class="link_secondary" href="./index.html">Imprint</a>
+        </nav>
+
+        <h1 class="font_prime_color">Imprint</h1>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Contact</h2>
+            <address>
+                <p><strong>Name:</strong> Philipp Biebert</p>
+                <p><strong>Address:</strong> An d. Logleine 7, 23570 Lübeck, Germany</p>
+                <p><strong>Email:</strong> <a class="link_secondary"
+                        href="mailto:contact@philippbiebert.de">contact@philippbiebert.de</a></p>
+            </address>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Terms of Use</h2>
+            <p>
+                By using this website, you accept the following terms. These may be changed at any time without notice.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Project Scope</h2>
+            <p>This portfolio website serves to showcase my work as a fullstack developer.</p>
+            <p>All content and design are protected by copyright. Unauthorized use is prohibited.</p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Copyright</h2>
+            <p>
+                The design and base structure of this project were provided by the Developer Akademie as part of a
+                training programme.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Usage</h2>
+            <p>This website may only be used for lawful purposes. Any misuse is prohibited.</p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Disclaimer</h2>
+            <p>
+                This website is provided without warranty. I am not liable for any damages arising from its use.
+            </p>
+        </section>
+
+        <section class="d_flex_ss_gm f_d_c">
+            <h2>Indemnity</h2>
+            <p>You agree to indemnify me against any claims arising from your use of this website.</p>
+        </section>
+
+        <p class="font_sec_color">Date: 22. May 2026</p>
+    </main>
+    <footer class="main_footer  w_full">
+        <nav class="d_flex_cs_gl">
+            <a href="../privacy/index.html" class="link">Privacy Policy</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
